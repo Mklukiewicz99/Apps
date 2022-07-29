@@ -10,7 +10,7 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Witam w książce Telefonicznej");
+s        Console.WriteLine("Witam w książce Telefonicznej");
         Console.WriteLine("Co zamierzasz zrobić:");
         Console.WriteLine("Dodać nr. Kliknij 1");
         Console.WriteLine("Wyświetlic kontakt na podstawie nr. Kliknij 2 ");
