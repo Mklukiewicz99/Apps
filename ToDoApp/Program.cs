@@ -7,6 +7,9 @@ using System.Runtime;
 //usuwanie obiektu ma działać na elemtach z listy
 //zmiana statusu ma działać na elemtach z listy
 //zmiana daty ma działać na elemtach z listy
+//sprawdzic usuwawnie 
+//wyciągnąć wybór aktywnego zadania i dopiero potem  używać funkcji 
+//wybór też ma być w funkcji
 
 namespace ToDoApp
 {
@@ -27,9 +30,9 @@ namespace ToDoApp
             int UserInput = int.Parse(Console.ReadLine());
             int i = 0;
             List<Zadanie> ListaZadań = new List<Zadanie>() { };
-            Zadanie zad1 = new Zadanie("Golenie", "Rozpoczęte", new DateTime(2013, 1, 23),99);
-            ListaZadań.Add(zad1);
-          
+            Zadanie zad1 = null;
+            ZaInicjujListe(ListaZadań);
+
             while (true)
             {
                 if (UserInput > 6 || UserInput == 0)
@@ -47,7 +50,10 @@ namespace ToDoApp
                             DodawanieZadań(ListaZadań);
                             i++;
                             break;
-                        case 3:                          
+                        case 3:
+                            UsuwanieZadań(ListaZadań);
+                            Console.WriteLine(msg2);
+                            UserInput = int.Parse(Console.ReadLine());
                             break;
                         case 4:
                             UstawianieStatusu(ListaZadań);
@@ -65,7 +71,7 @@ namespace ToDoApp
 
 
             }
-            void PokazywanieZadań(List<Zadanie> listaZadań) 
+            void PokazywanieZadań(List<Zadanie> listaZadań)
             {
                 if (listaZadań == null)
                 {
@@ -84,45 +90,58 @@ namespace ToDoApp
                     Console.WriteLine("*****Koniec Listy Zadań*****");
                     Console.WriteLine(msg2);
                     UserInput = int.Parse(Console.ReadLine());
-                    
+
 
 
                 }
 
             }
 
-            void DodawanieZadań(List<Zadanie> listaZadań) 
+            void DodawanieZadań(List<Zadanie> listaZadań)
             {
                 Console.WriteLine("Podaj nazwe Zadania");
                 string Input = Console.ReadLine();
-                DateTime data = DateTime.Now;                              
-                Zadanie zad2 = new Zadanie(Input, "Rozpoczęte", data,i);
+                DateTime data = DateTime.Now;
+                Zadanie zad2 = new Zadanie(Input, "Rozpoczęte", data, i);
                 ListaZadań.Add(zad2);
                 Console.WriteLine(msg2);
                 UserInput = int.Parse(Console.ReadLine());
             }
 
-           /* void UsuwanieZadań(List<Zadanie> listaZadań) 
+            void UsuwanieZadań(List<Zadanie> listaZadań)
             {
                 Console.WriteLine("Podaj nr zadania które chcesz usunąć");
                 int Input2 = int.Parse(Console.ReadLine());
-                foreach (Zadanie element in listaZadań)
-                {
-                    if (element.Numer == Input2)
-                    {
-                        Console.WriteLine("Zadanie zostało usunięte");
-                        ListaZadań.Remove(ListaZadań.Where(element.Numer = Input2);
-                        Console.WriteLine(msg2);
-                        UserInput = int.Parse(Console.ReadLine());
-                    }
-                    else
-                    {
-                        Console.WriteLine("Podano błędny numer");
-                    }
-                }
-            }*/
+                var e = listaZadań.Where(m => m.Numer == Input2).FirstOrDefault(); // w tym przypadku jak nie znajdzie zwróci nulla
 
-            void UstawianieStatusu(List<Zadanie> listaZadań) 
+                if (e == null)
+                {
+                    Console.WriteLine("Nie znaleziono zadania");
+                    return;
+                }
+                ListaZadań.Remove(e);
+
+
+
+
+                //foreach (zadanie element in listazadań)
+                //{
+                //    if (element.numer == input2)
+                //    {
+                //        console.writeline("zadanie zostało usunięte");
+                //        listazadań.remove(element);
+                //        console.writeline("usunięto zadanie");
+
+                //    }
+                //    else
+                //    {
+                //        console.writeline("podano błędny numer");
+                //    }
+                //}
+
+            }
+
+            void UstawianieStatusu(List<Zadanie> listaZadań)
             {
                 Console.WriteLine("Czy chcesz zmienic status zadania?");
                 Console.WriteLine("Jesli tak wpisz 'Y' jesli nie wpisz'N' ");
@@ -169,7 +188,7 @@ namespace ToDoApp
                         UserInput = int.Parse(Console.ReadLine());
                     }
                 }
-                
+
             }
             void ZmianaDaty(List<Zadanie> listaZadań)
             {
@@ -222,5 +241,14 @@ namespace ToDoApp
             }
         }
 
+        private static void  ZaInicjujListe(List<Zadanie> ListaZadań)
+        {
+            Zadanie zad1 = new Zadanie("Golenie", "Rozpoczęte", new DateTime(2013, 1, 23), 99);              
+            Zadanie zad3 = new Zadanie("xd", "Rozpoczęte", new DateTime(2013, 1, 23), 98);
+            Zadanie zad4 = new Zadanie("xa", "Rozpoczęte", new DateTime(2013, 1, 23), 97);
+            ListaZadań.Add(zad1);            
+            ListaZadań.Add(zad3);            
+            ListaZadań.Add(zad4);            
+        }
     }
 }
