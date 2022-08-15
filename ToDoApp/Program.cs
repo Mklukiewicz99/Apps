@@ -4,19 +4,18 @@ using System.Linq;
 using static System.Net.Mime.MediaTypeNames;
 using System.Runtime;
 //sortowanie obiektów na podstawie numerów
-//usuwanie obiektu ma działać na elemtach z listy
-//zmiana statusu ma działać na elemtach z listy
-//zmiana daty ma działać na elemtach z listy
-//sprawdzic usuwawnie 
-//wyciągnąć wybór aktywnego zadania i dopiero potem  używać funkcji 
+//wyciągnąć wybór aktywnego zadania i dopiero potem  używać funkcji , ma byc w osobnej klasie
+//klasa musi zawierac schowaną liste oraz liste akcji które bede w niej wykonywane
+//interfejsy w osobnym pliku 
 //wybór też ma być w funkcji
-
 namespace ToDoApp
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Witaj w swojej liscie zadan");
             Console.WriteLine("Co zamierzasz zrobic?");
             Console.WriteLine("Kliknij 1 jeśli chcesz zobaczyć liste zadań.");
@@ -28,10 +27,11 @@ namespace ToDoApp
             string msg = "Proszę podać liczbe od 1 do 6";
             string msg2 = "By wrócić kliknij ponownie liczbe od 1 do 6 by wybrać funkcje";
             int UserInput = int.Parse(Console.ReadLine());
+            //Console.WriteLine($"Wybrałeś {UserInput}");
             int i = 0;
             List<Zadanie> ListaZadań = new List<Zadanie>() { };
-            Zadanie zad1 = null;
-            ZaInicjujListe(ListaZadań);
+            //Zadanie zad1 = null;
+            //ZaInicjujListe(ListaZadań);
 
             while (true)
             {
@@ -49,6 +49,8 @@ namespace ToDoApp
                         case 2:
                             DodawanieZadań(ListaZadań);
                             i++;
+                            Console.WriteLine(msg2);
+                            UserInput = int.Parse(Console.ReadLine());
                             break;
                         case 3:
                             UsuwanieZadań(ListaZadań);
@@ -57,9 +59,13 @@ namespace ToDoApp
                             break;
                         case 4:
                             UstawianieStatusu(ListaZadań);
+                            Console.WriteLine(msg2);
+                            UserInput = int.Parse(Console.ReadLine());
                             break;
                         case 5:
                             ZmianaDaty(ListaZadań);
+                            Console.WriteLine(msg2);
+                            UserInput = int.Parse(Console.ReadLine());
                             break;
                         case 6:
                             Environment.Exit(0);
@@ -104,8 +110,7 @@ namespace ToDoApp
                 DateTime data = DateTime.Now;
                 Zadanie zad2 = new Zadanie(Input, "Rozpoczęte", data, i);
                 ListaZadań.Add(zad2);
-                Console.WriteLine(msg2);
-                UserInput = int.Parse(Console.ReadLine());
+                
             }
 
             void UsuwanieZadań(List<Zadanie> listaZadań)
@@ -120,38 +125,25 @@ namespace ToDoApp
                     return;
                 }
                 ListaZadań.Remove(e);
-
-
-
-
-                //foreach (zadanie element in listazadań)
-                //{
-                //    if (element.numer == input2)
-                //    {
-                //        console.writeline("zadanie zostało usunięte");
-                //        listazadań.remove(element);
-                //        console.writeline("usunięto zadanie");
-
-                //    }
-                //    else
-                //    {
-                //        console.writeline("podano błędny numer");
-                //    }
-                //}
-
+               
             }
 
             void UstawianieStatusu(List<Zadanie> listaZadań)
+
             {
+                Console.WriteLine("Podaj nr zadania któremu chcesz zmienic status");
+                int Input2 = int.Parse(Console.ReadLine());
+                var e = listaZadań.Where(m => m.Numer == Input2).FirstOrDefault();
+
+                if (e == null)
+                {
+                    Console.WriteLine("Nie znaleziono zadania");                   
+                    return;
+                }
                 Console.WriteLine("Czy chcesz zmienic status zadania?");
                 Console.WriteLine("Jesli tak wpisz 'Y' jesli nie wpisz'N' ");
                 string Input3 = Console.ReadLine();
-                while (Input3 != "N" || Input3 != "Y")
-                {
-                    Console.WriteLine("Podano zły znak ");
-                    Console.WriteLine("Podaj ponownie 'Y' jeśli chcesz zmienic lub 'N' jeśli nie ");
-                    Input3 = Console.ReadLine();
-
+                
 
 
                     if (Input3 == "Y")
@@ -162,19 +154,19 @@ namespace ToDoApp
                         switch (Input4)
                         {
                             case 1:
-                                zad1.Status = "Rozpoczęte";
+                                e.Status = "Rozpoczęte";
                                 Console.WriteLine("Zmieniono Status");
                                 Console.WriteLine(msg2);
                                 UserInput = int.Parse(Console.ReadLine());
                                 break;
                             case 2:
-                                zad1.Status = "W toku";
+                                e.Status = "W toku";
                                 Console.WriteLine("Zmieniono Status");
                                 Console.WriteLine(msg2);
                                 UserInput = int.Parse(Console.ReadLine());
                                 break;
                             case 3:
-                                zad1.Status = "Zakończone";
+                                e.Status = "Zakończone";
                                 Console.WriteLine("Zmieniono Status");
                                 Console.WriteLine(msg2);
                                 UserInput = int.Parse(Console.ReadLine());
@@ -182,16 +174,31 @@ namespace ToDoApp
                         }
                     }
 
+                    else if(Input3 == "N") 
+                    {
+                    Console.WriteLine(msg2);
+                    UserInput = int.Parse(Console.ReadLine());
+                    }
                     else
                     {
-                        Console.WriteLine(msg2);
-                        UserInput = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Podano zły znak ");
+                    Console.WriteLine("Podaj ponownie 'Y' jeśli chcesz zmienic lub 'N' jeśli nie ");
+                    Input3 = Console.ReadLine();
                     }
-                }
+                
 
             }
             void ZmianaDaty(List<Zadanie> listaZadań)
             {
+                Console.WriteLine("Podaj nr zadania które chcesz usunąć");
+                int Input2 = int.Parse(Console.ReadLine());
+                var e = listaZadań.Where(m => m.Numer == Input2).FirstOrDefault(); // w tym przypadku jak nie znajdzie zwróci nulla
+
+                if (e == null)
+                {
+                    Console.WriteLine("Nie znaleziono zadania");
+                    return;
+                }
                 Console.WriteLine("Czy chcesz zmienic date zadania?");
                 Console.WriteLine("Jesli tak wpisz 'Y' jesli nie wpisz'N' ");
                 string Input5 = Console.ReadLine();
@@ -227,7 +234,7 @@ namespace ToDoApp
                             Console.WriteLine("Podaj Dzień Ponownie");
                             Input8 = int.Parse(Console.ReadLine());
                         }
-                        zad1.DataUtworzenia = new DateTime(Input6, Input7, Input8);
+                        e.DataUtworzenia = new DateTime(Input6, Input7, Input8);
                         Console.WriteLine("Zmieniono Date");
                         Console.WriteLine(msg2);
                         UserInput = int.Parse(Console.ReadLine());

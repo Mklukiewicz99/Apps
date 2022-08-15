@@ -9,7 +9,9 @@ namespace ToDoApp
        public string Nazwa;
        public  string Status;
        public DateTime DataUtworzenia;
-        public int Numer;
+       public int Numer;
+
+        
 
         public Zadanie(string name, string status, DateTime date, int Nr) 
         {
@@ -24,5 +26,7 @@ namespace ToDoApp
         }
 
         
+        
     }
+    
 }
