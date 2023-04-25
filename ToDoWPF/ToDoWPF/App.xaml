@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:ToDoWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="Styles/Buttons.xaml">
+            
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

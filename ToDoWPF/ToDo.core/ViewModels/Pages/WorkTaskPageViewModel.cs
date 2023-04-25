@@ -39,8 +39,8 @@ namespace ToDo.core.ViewModels.Pages
             NewWorkTaskTitle = string.Empty; 
             NewWorkTaskDescription = string.Empty;
             
-            //OnPropertyChanged(nameof(NewWorkTaskTitle));
-            //OnPropertyChanged(nameof(NewWorkTaskDescription));
+            OnPropertyChanged(nameof(NewWorkTaskTitle));
+            OnPropertyChanged(nameof(NewWorkTaskDescription));
         }
 
         private void DeleteSelectedTask() 

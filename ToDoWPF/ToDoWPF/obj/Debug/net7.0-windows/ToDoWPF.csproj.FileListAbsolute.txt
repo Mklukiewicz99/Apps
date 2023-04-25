@@ -57,3 +57,5 @@ C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\obj\Debug\net7.0-windows\ref
 C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\obj\Debug\net7.0-windows\ToDoWPF.pdb
 C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\obj\Debug\net7.0-windows\ToDoWPF.genruntimeconfig.cache
 C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\obj\Debug\net7.0-windows\ref\ToDoWPF.dll
+C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\obj\Debug\net7.0-windows\Styles\Buttons.baml
+C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\obj\Debug\net7.0-windows\App.baml

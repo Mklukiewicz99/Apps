@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\App.xaml
-32006128596
+42083109625
 
 7129955529
 200-1618422169
-Controls\WorkTask.xaml;MainWindow.xaml;Pages\WorkTasksPage1.xaml;
+Controls\WorkTask.xaml;MainWindow.xaml;Pages\WorkTasksPage1.xaml;Styles\Buttons.xaml;
 
 True
 
