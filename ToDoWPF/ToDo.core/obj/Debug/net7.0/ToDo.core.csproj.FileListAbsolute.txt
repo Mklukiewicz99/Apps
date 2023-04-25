@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\bin\Debug\net7.0\ToDo.core.deps.json
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\bin\Debug\net7.0\ToDo.core.dll
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\bin\Debug\net7.0\ToDo.core.pdb
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.dll
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\refint\ToDo.core.dll
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.pdb
+C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\obj\Debug\net7.0\ref\ToDo.core.dll
