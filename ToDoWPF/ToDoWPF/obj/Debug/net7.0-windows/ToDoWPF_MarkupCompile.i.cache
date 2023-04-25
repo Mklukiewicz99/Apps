@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Admin\source\repos\ToDoWPF\ToDoWPF\obj\Debug\net7.0-windows\
+C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\obj\Debug\net7.0-windows\
 ToDoWPF
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\Admin\source\repos\ToDoWPF\ToDoWPF\App.xaml
+C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDoWPF\App.xaml
 32006128596
 
 7129955529
-1991957772588
+200-1618422169
 Controls\WorkTask.xaml;MainWindow.xaml;Pages\WorkTasksPage1.xaml;
 
 True

@@ -1,4 +1,5 @@
 is_global = true
+build_property.PropertyChangedAnalyzerConfiguration = 
 build_property.TargetFramework = net7.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -8,4 +9,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ToDo.core
-build_property.ProjectDir = C:\Users\Admin\source\repos\ToDoWPF\ToDo.core\
+build_property.ProjectDir = C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDo.core\

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDoWPF\\ToDoWPF.csproj": {}
+    "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDoWPF\\ToDoWPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDo.core\\ToDo.core.csproj": {
+    "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDo.core\\ToDo.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDo.core\\ToDo.core.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDo.core\\ToDo.core.csproj",
         "projectName": "ToDo.core",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDo.core\\ToDo.core.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDo.core\\ToDo.core.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDo.core\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDo.core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDoWPF\\ToDoWPF.csproj": {
+    "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDoWPF\\ToDoWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDoWPF\\ToDoWPF.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDoWPF\\ToDoWPF.csproj",
         "projectName": "ToDoWPF",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDoWPF\\ToDoWPF.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDoWPF\\ToDoWPF.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDoWPF\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDoWPF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +89,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDo.core\\ToDo.core.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\ToDoWPF\\ToDo.core\\ToDo.core.csproj"
+              "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDo.core\\ToDo.core.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Documents\\ConsoleApp\\ToDoWPF\\ToDo.core\\ToDo.core.csproj"
               }
             }
           }
