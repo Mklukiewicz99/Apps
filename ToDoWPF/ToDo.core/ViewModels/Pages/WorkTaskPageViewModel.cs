@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using ToDo.core.ViewModels.Controllers;
+using ToDoList.Database;
 
 namespace ToDo.core.ViewModels.Pages
 {
@@ -22,6 +23,17 @@ namespace ToDo.core.ViewModels.Pages
         {
             AddNewTaskCommand = new RelayCommand(AddnewTask);
             DeleteSelectedTaskCommand = new RelayCommand(DeleteSelectedTask);
+
+          foreach (var task in DatabaseLocator.Database.WorkTasks.ToList()) 
+            {
+                WorkTaskList.Add(new WorkTaskViewModel
+                {
+                    
+                    Title= task.Title,
+                    Description= task.Description,
+                    CreatedDate= task.CreatedDate,
+                });
+            }
         }
 
 
@@ -35,6 +47,17 @@ namespace ToDo.core.ViewModels.Pages
              };
 
             WorkTaskList.Add(newTask);
+
+            DatabaseLocator.Database.WorkTasks.Add(new WorkTask
+            {
+                Id = newTask.Id,
+                Title = newTask.Title,
+                Description = newTask.Description,
+                CreatedDate = newTask.CreatedDate
+
+            }); ;
+
+            DatabaseLocator.Database.SaveChanges();
 
             NewWorkTaskTitle = string.Empty; 
             NewWorkTaskDescription = string.Empty;
@@ -50,7 +73,14 @@ namespace ToDo.core.ViewModels.Pages
             foreach(var task in selectedTasks)
             {
                 WorkTaskList.Remove(task);
+                var foundEntity = DatabaseLocator.Database.WorkTasks.FirstOrDefault(X => X.Id == task.Id);
+                
+                if(foundEntity != null) 
+                {
+                    DatabaseLocator.Database.WorkTasks.Remove(foundEntity);
+                }
             }
+            DatabaseLocator.Database.SaveChanges();
         }
     }
 }
