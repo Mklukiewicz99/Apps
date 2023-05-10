@@ -24,3 +24,6 @@ C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core
 C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDo.core\obj\Debug\net7.0\refint\ToDo.core.dll
 C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.pdb
 C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDo.core\obj\Debug\net7.0\ref\ToDo.core.dll
+C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDo.core\bin\Debug\net7.0\ToDoList.Database.dll
+C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDo.core\bin\Debug\net7.0\ToDoList.Database.pdb
+C:\Users\Admin\Documents\ConsoleApp\ToDoWPF\ToDo.core\obj\Debug\net7.0\ToDo.core.csproj.CopyComplete

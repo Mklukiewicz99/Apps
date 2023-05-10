@@ -53,7 +53,7 @@ namespace ToDoWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ToDoWPF;V1.0.0.0;component/pages/worktaskspage1.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ToDoWPF;component/pages/worktaskspage1.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\WorkTasksPage1.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

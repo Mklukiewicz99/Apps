@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoWPF", "ToDoWPF\ToDoWPF.csproj", "{BEC38F9D-563D-488A-A303-C3A16F3199BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoWPF", "ToDoWPF\ToDoWPF.csproj", "{BEC38F9D-563D-488A-A303-C3A16F3199BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.core", "ToDo.core\ToDo.core.csproj", "{51484568-C1CB-430A-B446-16D870F4183E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.core", "ToDo.core\ToDo.core.csproj", "{51484568-C1CB-430A-B446-16D870F4183E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Database", "ToDoList.Database\ToDoList.Database.csproj", "{D23E9392-FBB7-4208-91A3-00405AC6A9C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{51484568-C1CB-430A-B446-16D870F4183E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51484568-C1CB-430A-B446-16D870F4183E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51484568-C1CB-430A-B446-16D870F4183E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D23E9392-FBB7-4208-91A3-00405AC6A9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23E9392-FBB7-4208-91A3-00405AC6A9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23E9392-FBB7-4208-91A3-00405AC6A9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23E9392-FBB7-4208-91A3-00405AC6A9C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
