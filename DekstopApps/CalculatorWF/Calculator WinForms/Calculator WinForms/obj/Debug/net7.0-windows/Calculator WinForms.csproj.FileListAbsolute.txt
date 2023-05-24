@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\bin\Debug\net7.0-windows\Calculator WinForms.exe
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\bin\Debug\net7.0-windows\Calculator WinForms.deps.json
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\bin\Debug\net7.0-windows\Calculator WinForms.runtimeconfig.json
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\bin\Debug\net7.0-windows\Calculator WinForms.dll
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\bin\Debug\net7.0-windows\Calculator WinForms.pdb
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator_WinForms.Form1.resources
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.dll
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\refint\Calculator WinForms.dll
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.pdb
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\Calculator WinForms.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Github\DekstopApps\CalculatorWF\Calculator WinForms\Calculator WinForms\obj\Debug\net7.0-windows\ref\Calculator WinForms.dll
